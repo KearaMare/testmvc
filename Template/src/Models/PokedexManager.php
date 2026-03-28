@@ -15,7 +15,7 @@ class PokedexManager extends Pokedex {
     public function getAll() {
         $stmt = $this->bdd->prepare('SELECT * FROM pokemon');
         $stmt->execute();
-        // important
+        // important transforme en objet
         return $stmt->fetchAll(\PDO::FETCH_CLASS, 'Template\Models\Pokedex');
     }
 }

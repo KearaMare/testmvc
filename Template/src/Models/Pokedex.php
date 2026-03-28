@@ -2,7 +2,9 @@
 
 namespace Template\Models;
 
+// enlever le abstract pour transformer chaque élément en objet
 class Pokedex {
+    // Initiation de chaque des fonctions pour récupérer un élément seulement
     private $id;
     private $nom;
     private $description;
